@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 25" width="16" height="25">
+	<title>contents</title>
+	<defs>
+		<image  width="16" height="25" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAZCAMAAAAPIl6bAAAAAXNSR0IB2cksfwAAAUpQTFRFAAAAhpOwYG+QhpOwhpOwXGuNXGuNhpOwhpOwXGuNXGuNhpOwXGuNhpOwhpOwXGuNXGuNhpOwXGuNhpOwhpOwXGuNXGuNhpOwhpOwXGuNXGuNhpOwXGuNhpOwhpOwfIqoZXOURFJ4VWOHXGuNXGuNhpOwhZKvdIGhX26QPUtyP050Tl2BW2qMXGuNhpOwgY6sanmZPUtySFZ7WGeKXGuNZXOUPUtyRFJ4XGuNPUtyPUtyPUtyhpOwXGuNXGuNPUtyPUtyXGuNhpOwhpOwhpOwXGuNXGuNPUtyPUtyXGuNXGuNXGuNhpOwhpOwhpOwXGuNXGuNXGuNPUtyPUtyPUtyXGuNXGuNXGuNhpOwhpOwhpOwhpOwhpOwXGuNRFN4XGuNXGuNXGuNXGuNXGuNhpOwhpOwhpOwXWyOXGuNXGuNhpOwXGuNhpOwX26QMYI+xQAAAG50Uk5TAF5oFeztFaP//6NHRwrf3wqNjTP8/DMEzc4Ec3Mh9ubM0Ob2Ibn/09r/2tP/uV3zyu3K8121/LWA9oAKSR6npx5KNtJMO8zMO0zSNnC9LwJh6OliAi+9cAGv/p4aDREanf6vARH1f4H0Efr6bHmtD0CRAAAA9UlEQVR4nFWQ11pCQQyEY0ETC6CCKCiKiLI27F1QwApYsIBd7PX9b82esOfAXO383+4kswCihkaoU1Ozq6UOtCK11fp2RKIOx3e6NfB4bdCFGlC38T0+Af5e8YE+FED9QQuE0AAa0H4wzHZoODLCIDrKIIZj43EipSYmp2gaYCYx69K3FWtufmERlvzWawsotbwC3tWoA9bWN2AzsJU0ILUd3IF0Jgu7exrsH8DhUQ4gj4Xjk9Oz4vnF5RWVeGz5Gm9u7+4fHp8q9PyiN3vlrm/vH5/c90vKpL9l9Z+cqZsXULL/g2MYSICIY+wAE+MEiH7/qod/RbojshFFcnsAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="contents">
+		<g id="2.작품정보">
+			<use id="ic_eth" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1",
+    "chainId": "0x1",
+    "chainName": "Ethereum Mainnet",
+    "nativeCurrency": { "name": "ETH", "symbol": "ETH", "decimals": 18 },
+    "rpcUrls": ["https://mainnet.infura.io/v3"],
+    "blockExplorerUrls": ["https://etherscan.io"]
+  },
+  {
+    "id": "137",
+    "chainId": "0x89",
+    "chainName": "Polygon Mainnet",
+    "nativeCurrency": { "name": "MATIC", "symbol": "MATIC", "decimals": 18 },
+    "rpcUrls": ["https://polygon-rpc.com"],
+    "blockExplorerUrls": ["https://www.polygonscan.com"]
+  },
+  {
+    "id": "80001",
+    "chainId": "0x13881",
+    "chainName": "Mumbai",
+    "nativeCurrency": { "name": "MATIC", "symbol": "MATIC", "decimals": 18 },
+    "rpcUrls": [
+      "https://polygon-mumbai.infura.io/v3/4458cf4d1689497b9a38b1d6bbf05e78"
+    ],
+    "blockExplorerUrls": ["https://mumbai.polygonscan.com"]
+  },
+  {
+    "id": "5",
+    "chainId": "0x5",
+    "chainName": "Goerli",
+    "nativeCurrency": { "name": "ETH", "symbol": "ETH", "decimals": 18 },
+    "rpcUrls": ["https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161"],
+    "blockExplorerUrls": ["https://goerli.etherscan.io"]
+  }
+]

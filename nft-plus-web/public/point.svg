@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 64" width="52" height="64">
+	<title>slider</title>
+	<defs>
+		<image  width="52" height="64" id="img1" href="data:image/png;base64,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"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="slider">
+		<g id="mu">
+			<use id="레이어 219" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

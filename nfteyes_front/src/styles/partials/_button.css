@@ -1,0 +1,15 @@
+button,
+[type='submit'] {
+    @apply text-20 text-white w-full py-[10px] rounded-md bg-purple hover:bg-lightPurple font-notoRegular leading-normal;
+}
+
+.ghost-btn {
+    @apply w-fit p-0 m-0 outline-none text-gray-100 bg-transparent border-none hover:bg-transparent;
+}
+.outline-btn {
+    @apply text-18 font-notoRegular leading-normal bg-transparent border border-blackPurple;
+    &:hover {
+        @apply bg-transparent;
+    } 
+}
+

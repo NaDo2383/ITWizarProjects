@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 51" width="52" height="51">
+	<title>slider</title>
+	<defs>
+		<image  width="52" height="51" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAzCAMAAADvo9thAAAAAXNSR0IB2cksfwAAAhxQTFRFAAAAMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzbyRn2wnF+gHg0gu9YChaMzMzMzMzMzMzMzMzeyFx/QHi/wDk9wLdZyZgMzMzMzMzMzMzhB95cSRoMzMzlRqIMzMzMzMzMzMzkhuGMzMzMzMzgoKCPDw8aCZhMzMzkpKS////6OjokByE/gDjMzMzMzMzhh577wTWMzMzMzMz7u7uQEBAwBCtMzMznZ2d7+/v6QbRTC1JMzMzn5+ffSB0TyxLMzMzMzMzMzMzMzMzREREdiJtMzMzMzMzo6Oj9fX1RkZGMzMzq6urMzMzMzMzMzMz4uLiSEhIMzMzMzMzMzMz3t7eSUlJMzMzNTU1tbW129vbQ0NDMzMzMzMztra2MzMzMzMzMzMzNzc3urq609PTwcHBPj4+MzMzMzMzMzMzMzMzMzMzODg4zc3NOjo6ysrKMzMzMzMzzs7OMzMzMzMzMzMzMzMzQUFBubm5MzMzMzMzVVVV7e3tMzMzT09P6enpTk5Oenp6MzMzMzMzj4+PTU1NMzMzMzMz0NDQfHx8MzMzRUVF/f39h4eHMzMzhYWF4ODgMzMzxcXFi4uL+fn5k5OTeXl5OTk5MzMzMzMzz8/PlZWVXFxcNDQ0MzMzMzMzsbGxdXV1Pz8/MzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzNjY2Ojo6MzMzM163oQAAALR0Uk5TAEi18f/sqjgGnoYBspf//////5oDEdb//////6UK4f//vv+YD8P/R8n///+2///////zEv//FdP////o/////5/////6JxzY//9f3P///2n//mMh//94JOT//3f//////Vv/Ti3r///////2STNCN//////09f8ySm/8//8xhP//wf////8gs///DPj//1T////X//8F////////Aub/////7Tn////yuonOhz4E2lD7/1NqqAWEHAAAAkNJREFUeJyd1mdXE0EUBuDRvPYGKsoq2IKCbSxoEFEURSyAIqIEJAQRkKKgYBcVe0Wx94K91z/o3UyCm83OzCbvl50ze59zz87uzFnGXGXQYA+GDB3mrlhk+AiIjBzl3oxGJGPcqpAZOy4peTxdJ0x0ZVImUe3kVMMwpkylUZoblT6NKqebxjCSZrhT6TPNR5llGP+VV2cyZosFmGNVmRqTRTVz51nVfGCB3izki0y1eIlQycBSlckWhgu1TKjlNFQYX07YcL4id0CtBPI0ZhUXWR1R+WuAtWpTwLlVrUvNXw8UbpCZoo1RhtQmmthMBlukppjulnBrSreKV7ZNacp4dErNXtvLZWaHk+EVO2l2l8xU+p1MVTX12a0yNQG7qQ0CdXuUpt7JFO6VmYa8BEwj0LTPbppztaYlxrQCbftl5oDctMtMhwc4GGMOaU1nl910dQKHEzCeDplpP5KAaQNaj9pNS5PWNDuZxmMyc1xuGmTmxEngVIzpVprTtBWCtXZTX0MHj9SwM4TO9jgYf6XUsHPm3j9/IcoENMZXhxhVBrVh5cDFS9HKNMWXFYZdAa5yU12rsJoilbl+A7jJeS8VVgtVojXsFnC7j0rvRFQBDe6qDUsD7oUahNT9kMnxqc0D2hEP+YAKPnJhWCZ9dY/DC/BEHNdaw7zAU0F6Ar3PTJOVojPPXwDdnPe9fPW6X/R5k6Ez7C2dJVXv3n8I//x8/OTN1hr2GeiP/C59+frtu15QfiDu/GS/fseN/rC//vg7/QPux9Wp7aPR5gAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="slider">
+		<g id="mu">
+			<use id="레이어 220" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

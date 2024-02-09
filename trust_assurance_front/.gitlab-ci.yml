@@ -1,0 +1,26 @@
+stages:
+  - staging
+
+web-staging:
+  image: docker:latest
+  stage: staging
+  services:
+    - docker:dind
+  before_script:
+    - docker info
+    - cp .env.staging .env
+    - rm .env.development
+    - rm .env.staging
+    - rm .env.production
+  script:
+    - docker-compose down --remove-orphans --volumes --rmi local
+    - docker-compose up --build --remove-orphans -d
+  after_script:
+    - docker image prune --filter label=STG=DEPS --force
+    - docker image prune --filter label=STG=BUILDER --force
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      exists:
+        - docker-compose.yml
+  tags:
+    - staging

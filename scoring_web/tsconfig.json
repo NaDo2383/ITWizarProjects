@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "strict": false,
+        "noEmit": true,
+        "incremental": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ]
+    },
+    "include": [
+        "next-env.d.ts",
+        ".next/types/**/*.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "src/app/components/charts/PieChart.jsx",
+        "src/app/components/charts/LineChart.jsx",
+        "src/app/components/charts/LineAreaChart.jsx",
+        "src/app/components/charts/BarChart.jsx",
+        "src/app/components/widget/Widget.jsx",
+        "src/app/components/admin/default/WeeklyRevenue.jsx",
+        "src/app/components/admin/default/TotalSpent.jsx",
+        "src/app/components/admin/default/TaskCard.jsx",
+        "src/app/components/admin/default/PieChartCard.jsx",
+        "src/app/components/admin/default/DailyTraffic.jsx",
+        "src/app/components/admin/default/ComplexTable.jsx",
+        "src/app/components/admin/default/RecentLoanApplicant.jsx",
+        "src/app/components/calendar/MiniCalendar.jsx",
+        "src/app/admin/default/page.hsx"
+    ],
+    "exclude": ["node_modules"]
+}

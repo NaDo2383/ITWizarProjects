@@ -1,0 +1,27 @@
+.motion-icon {
+    @apply absolute top-7 right-6 py-[7.5px] px-[10px] rounded-full bg-opacity-50 cursor-pointer flex items-center gap-1 transition duration-300 hover:bg-white
+}
+.motion-dots {
+    @apply rounded-full p-[3px] w-[8px] h-[8px] group-hover:bg-[#666] transition duration-300
+}
+.motion {
+    @apply absolute w-[200px] transition duration-[350ms] px-4 py-3 text-[#333] font-[500] font-noto text-[15px] bg-white bg-opacity-80 right-0 rounded-xl
+}
+.filter-artwork {
+    @apply right-0 flex  justify-start  md:justify-between bg-[#181A1A] gap-4 
+}
+.desc-titleContainer {
+    @apply flex items-center text-3xl text-[#6d6d6d] gap-2 mb-[15px]
+}
+.transaction-th {
+    @apply text-[#DDDDDD] py-2 lg:text-[15px] text-[12px]  font-normal
+}
+.transaction-td {
+    @apply text-[#DDDDDD] whitespace-nowrap w-1/5 py-2 lg:text-[15px] text-[12px] font-[400]
+}
+.date {
+    @apply lg:text-[18px] sm:text-[14px] text-[10px] font-[500] text-[#9039FE]
+}
+.auctionPrice {
+    @apply lg:text-[18px] sm:text-[16px] text-[10px] font-bold text-[#DDD] flex items-center
+}

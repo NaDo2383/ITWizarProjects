@@ -1,0 +1,4 @@
+FROM nginx:alpine
+COPY domain.crt /home/domain.crt
+COPY domain.key /home/domain.key
+COPY nginx.conf /etc/nginx/nginx.conf

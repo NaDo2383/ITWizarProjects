@@ -1,0 +1,30 @@
+.open-hamburger {
+    div {
+        transition: all 0.3s ease;
+        &:first-child {
+            rotate: 45deg;
+            transform: translateX(3px);
+            transform-origin: left;
+        }
+        &:nth-child(2) {
+            @apply translate-x-10 opacity-0;
+        }
+        &:last-child {
+            rotate: -45deg;
+            transform: translateX(3.5px);
+            transform-origin: left;
+        }
+    }
+}
+.active {
+    @apply bg-blue dark:bg-purple;
+}
+
+.underline-text {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+}
+ .progress-bar-gradient-bg {
+    background: linear-gradient(269deg, #CD1D9C 0%, #6505B4 100%);
+ }

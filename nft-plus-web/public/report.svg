@@ -1,0 +1,16 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 15" width="20" height="22">
+	<title>contents</title>
+	<defs>
+		<image  width="13" height="15" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAMAAAAI/bVFAAAAAXNSR0IB2cksfwAAAEVQTFRFAAAA0hhM0hhM0hhM0hhM0hhM0hhM0hhM0hhM0hhM0hhM0hhM0hhM0hhM0hhM0hhM0hhM0hhM0hhM0hhM////0hhMZmZm5en7BQAAABd0Uk5TABTn1zkZ+Xf/AGUaxysSkOban6AA9/9PKU68AAAAUklEQVR4nJ3NSRKAMAhE0cYRHDIo8f5HNcRY6ta3gV8sAAw1uLUd+gEYWaymPGZgWUvB+cDBOylFkU2kctr4suddKdVKpAA/5HepiFb5/fH2rRMGdQcYJ+hNWgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="contents">
+		<g id="2.작품정보">
+			<g id="btn_신고하기">
+				<use id="레이어 329" href="#img1" x="0" y="0" />
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,3 @@
+.uguide {
+    @apply flex-1 pt-[45px] md:pt-[90px] w-full font-noto flex flex-col items-center justify-center
+}

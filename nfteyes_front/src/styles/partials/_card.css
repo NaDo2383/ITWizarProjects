@@ -1,0 +1,58 @@
+.card-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+    align-items: flex-start;
+}
+.card {
+    @apply border rounded-lg p-10;
+}
+
+.cutoff-text {
+    --max-lines: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--max-lines);
+}
+
+.cutoff-text-1 {
+    --max-lines-1: 3;
+    --line-height: 1.4;
+    max-height: calc(var(--max-lines-1)*1rem*var(--line-height));
+    line-height: var(--line-height);
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.3s ease-in-out;
+}
+.cutoff-text-1:has(+ .expand-btn:not(:checked))::before {
+    content: "";
+    position:absolute;
+    height: calc(1em * var(--line-height));
+    width: 100%;
+    bottom:0;
+    pointer-events: none;
+    background: linear-gradient(to bottom, transparent, white);
+}
+
+.expand-btn {
+    appearance: none;
+    border: 1px solid black;
+    padding: .5em;
+    border-radius: .25em;
+    cursor:pointer;
+    margin-top: 1rem;
+    &:hover{
+        background-color: #ccc;
+    }
+    &::before{
+        content: "Expand";
+    }
+    &:checked::before{
+        content:"Collapse";
+    }
+}
+
+.cutoff-text-1:has(+ .expand-btn:checked) {
+    max-height: 300px !important;
+}

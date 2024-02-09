@@ -1,0 +1,58 @@
+.wrapper {
+    @apply container mx-auto;
+}
+.small-wrapper {
+    @apply w-[400px] mx-auto;
+}
+
+.semi-small-wrapper { 
+    @apply w-[524px] mx-auto;
+}
+
+.medium-wrapper { 
+    @apply w-[917px] mx-auto; 
+}
+
+.auto-grid {
+    @apply grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] w-full h-fit gap-10;
+}
+.auto-grid-container,
+.cluster-container,
+.flexible-container,
+.reel-container {
+    outline: 5px solid hotpink;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.auto-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(10rem, 100%), 1fr));
+}
+
+.cluster-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.child {
+    background: bisque;
+    outline: 2px solid blue;
+    color: white;
+    padding-inline: 10px;
+}
+
+.flexible-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexible-container > * {
+    flex: 1;
+}
+.reel-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 45%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 1rem;
+}

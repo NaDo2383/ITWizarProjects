@@ -1,0 +1,90 @@
+# You can override the included template(s) by including variable overrides
+# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
+# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/#customizing-settings
+# Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
+# Note that environment variables can be set in several places
+# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
+
+# stages:
+# - test
+# sast:
+#   stage: test
+# include:
+# - template: Security/SAST.gitlab-ci.yml
+stages:
+  - test
+  - staging
+  - production
+  - cleanup_build
+
+.cleanup_build_job:
+  stage: cleanup_build
+  script:
+    - docker run --restart always -d -p 90:3000 --name nftplus-web --network=internal_service_lan --log-opt max-size=20m --log-opt max-file=5 -v /opt/projects/nftplus:/opt/projects/nftplus nftplus-web
+  when: on_failure
+
+web-test:
+  image: docker:latest
+  stage: test
+  before_script:
+    - rm .env*
+    - echo "$DEVELOPMENT_ENV_FILE" > .env
+    - docker network create internal_service_lan &> /dev/null || true
+  services:
+    - docker:dind
+  script:
+    - docker stop nftplus-web &> /dev/null || true
+    - docker rm -f nftplus-web &> /dev/null || true
+    - docker build -f dockerfile-development -t nftplus-web .
+  after_script:
+    - docker run --restart always -d -p 90:3000 --name nftplus-web --network=internal_service_lan --log-opt max-size=20m --log-opt max-file=5 -v /opt/projects/nftplus:/opt/projects/nftplus nftplus-web
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "refactor-test"'
+      exists:
+        - dockerfile-development
+  tags:
+    - test
+
+web-staging:
+  image: docker:latest
+  stage: staging
+  before_script:
+    - rm .env*
+    - echo "$STAGING_ENV_FILE" > .env
+    - docker network create internal_service_lan &> /dev/null || true
+  services:
+    - docker:dind
+  script:
+    - docker stop nftplus-web &> /dev/null || true
+    - docker rm -f nftplus-web &> /dev/null || true
+    - docker build -f dockerfile-staging -t nftplus-web .
+  after_script:  
+    - docker run --restart always -d -p 90:3000 --name nftplus-web --network=internal_service_lan --log-opt max-size=20m --log-opt max-file=5 -v /opt/projects/nftplus:/opt/projects/nftplus nftplus-web
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "refactor-main"'
+      exists:
+        - dockerfile-staging
+  tags:
+    - staging
+
+web-production:
+  image: docker:latest
+  stage: production
+  before_script:
+    - rm .env*
+    - echo "$PRODUCTION_ENV_FILE" > .env
+    - docker network create internal_service_lan &> /dev/null || true
+  services:
+    - docker:dind
+  script:
+    - docker stop nftplus-web &> /dev/null || true
+    - docker rm -f nftplus-web &> /dev/null || true
+    - docker build -f dockerfile-staging -t nftplus-web .
+  after_script:
+    - docker run --restart always -d -p 90:3000 --name nftplus-web --network=internal_service_lan --log-opt max-size=20m --log-opt max-file=5 -v /opt/projects/nftplus:/opt/projects/nftplus nftplus-web
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "refactor-production"'
+      exists:
+        - dockerfile-production
+  tags:
+    - production

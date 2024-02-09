@@ -1,0 +1,13 @@
+.pagination-container {
+    @apply flex justify-between items-center my-4;
+}
+.pagination {
+    @apply flex gap-10;
+}
+
+.pagination button {
+    @apply text-gray-500 px-10 py-6 rounded-md border border-emerald-700 cursor-pointer;
+}
+.pagination-active {
+    @apply text-white cursor-not-allowed;
+}

@@ -1,0 +1,33 @@
+input[type='radio'] {
+    display: grid;
+    place-content: center;
+    padding: var(--space-10);
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 0.15em solid var(--gray);
+    background-color: var(--gray-soft);
+    cursor: pointer;
+}
+
+input[type='radio']::before {
+    content: '';
+    width: var(--space-16);
+    height: var(--space-16);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    background-color: var(--green);
+}
+
+input[type='radio']:checked::before {
+    transform: scale(1);
+}
+
+input[type='radio']:focus {
+    outline: max(1px, 0.15em) solid transparent;
+    outline-offset: max(2px, 0.15em);
+}

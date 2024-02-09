@@ -1,0 +1,96 @@
+module.exports = {
+  // reactStrictMode: true,
+  output: 'standalone',
+  env: {
+    public: process.env.PUBLIC_URL,
+    url: process.env.url,
+    nextApiUrl: process.env.nextApiUrl,
+    niceApiUrl: process.env.niceApiUrl,
+    mode: process.env.mode,
+    eyesUrl: process.env.eyesUrl,
+    NEXT_PUBLIC_GA_MEASUREMENT_ID: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
+    MATIC_CHAIN_ID: process.env.MATIC_CHAIN_ID,
+    ETH_CHAIN_ID: process.env.ETH_CHAIN_ID,
+    NFT_STORAGE_KEY: process.env.NFT_STORAGE_KEY,
+    contractAddress: process.env.contractAddress,
+    eyesContractAddress: process.env.eyesContractAddress,
+    tamtamNftAddress: process.env.tamtamNftAddress,
+    adminAddress: process.env.adminAddress,
+    tamtamAddress: process.env.tamtamAddress,
+    etdAddress: process.env.etdAddress,
+    tamtamEyesTrader: process.env.tamtamEyesTrader,
+    eyesToken: process.env.eyesToken,
+    trustVerificationUrl : process.env.trustVerificationUrl,
+    trustVerificationKey : process.env.trustVerificationKey,
+    polygonscanUrl : process.env.polygonscanUrl,
+    DAPP_LINK : process.env.DAPP_LINK,
+    MULTIMEDIA_FILE_NORMALIZER_SERVICE_HOST : process.env.MULTIMEDIA_FILE_NORMALIZER_SERVICE_HOST
+  },
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "http://api.example.com/:path*",
+      },
+    ];
+  },
+  images: {
+    domains: [
+      "https://tamtam.itwizard.mn",
+      "tamtam.itwizard.mn",
+      "test-generic.s3.ap-northeast-2.amazonaws.com",
+      "test-about.s3.ap-northeast-2.amazonaws.com",
+      "test-artwork.s3.ap-northeast-2.amazonaws.com",
+      "test-banner.s3.ap-northeast-2.amazonaws.com",
+      "test-summernote.s3.ap-northeast-2.amazonaws.com",
+      "test-contractdoc.s3.ap-northeast-2.amazonaws.com",
+      "test-notice.s3.ap-northeast-2.amazonaws.com",
+      "test-nftuser.s3.ap-northeast-2.amazonaws.com",
+      "test-copyrightfile.s3.ap-northeast-2.amazonaws.com",
+      "test-reportfile.s3.ap-northeast-2.amazonaws.com",
+      "test-faq1.s3.ap-northeast-2.amazonaws.com",
+      "test-competition.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-base.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-about.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-art.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-banner.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-content.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-contract.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-notice.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-user.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-copyright.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-report.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-faq.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-competition.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-topnotification.s3.ap-northeast-2.amazonaws.com",
+      "tamtam-user-bg.s3.ap-northeast-2.amazonaws.com",
+      "staging-base.s3.ap-northeast-2.amazonaws.com",
+      "staging-about.s3.ap-northeast-2.amazonaws.com",
+      "staging-artwork.s3.ap-northeast-2.amazonaws.com",
+      "staging-banner.s3.ap-northeast-2.amazonaws.com",
+      "staging-summernote.s3.ap-northeast-2.amazonaws.com",
+      "staging-contract.s3.ap-northeast-2.amazonaws.com",
+      "staging-notice.s3.ap-northeast-2.amazonaws.com",
+      "staging-user.s3.ap-northeast-2.amazonaws.com",
+      "staging-copyright.s3.ap-northeast-2.amazonaws.com",
+      "staging-reportfile.s3.ap-northeast-2.amazonaws.com",
+      "staging-faq.s3.ap-northeast-2.amazonaws.com",
+      "staging-competition.s3.ap-northeast-2.amazonaws.com",
+      "staging-artist.s3.ap-northeast-2.amazonaws.com",
+      "test-artist.s3.ap-northeast-2.amazonaws.com",
+      "fonts.googleapis.com",
+      "tamtam-artist.s3.ap-northeast-2.amazonaws.com"
+    ]
+
+  },
+  i18n: {
+    locales: ["en", "ko"],
+    defaultLocale: "ko",
+    localeDetection: false
+  },
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
+  },
+};

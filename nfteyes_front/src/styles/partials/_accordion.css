@@ -1,0 +1,65 @@
+.accordion-panel button, .accordion-panel span, .accordion-panel p {
+    @apply text-white;
+}
+.accordion-panel {
+    @apply relative isolate basis-[calc((0.75rem*2)+3rem)] rounded-[calc(((0.75rem*2)+3rem)/2)] overflow-hidden p-20;
+    transition:flex-basis 500ms;
+}
+.accordion-panel:focus-within {
+    outline: 3px solid orange; 
+}
+.accordion-title {
+    @apply flex items-center gap-[1rem] bg-transparent border-0 p-0;
+}
+.accordion-title span {
+    @apply font-tekoBold;
+}
+
+.accordion-content > p {
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: transform 1000ms 250ms, opacity 1500ms 250ms;
+}
+.accordion-image {
+    @apply 
+        max-w-full 
+        w-full 
+        h-full 
+        object-cover 
+        absolute 
+        inset-0 
+        z-[-1];
+   transition: filter 500ms;      
+}
+.accordion-icon {
+    @apply 
+        p-10
+      bg-gray-600
+        rounded-full
+        w-[3rem]
+        h-[3rem]
+        flex
+        items-center
+        justify-center;
+}
+.accordion-panel:has([aria-expanded="true"]) {
+    flex-basis: clamp(15rem, 40vh, 20rem);
+    flex-grow:1;
+}
+.accordion-panel:has([aria-expanded="true"]) p {
+    transform: translateY(0);
+    opacity: 1;
+}
+.accordion-panel:has([aria-expanded="true"]) .accordion-image {
+    filter:brightness(0.5);
+}
+
+@media(min-width: 45em) {
+    .accordion {
+        flex-direction: row;
+    }
+    .accordion-icon {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+}

@@ -1,0 +1,23 @@
+stages:
+    - test
+    - staging
+    - production
+
+web-staging:
+    image: docker:latest
+    stage: staging
+    services:
+        - docker:dind
+    before_script:
+    script:
+        - docker build -f dockerfile-staging -t nfteyes_client .
+        - docker stop nfteyes_client &> /dev/null || true
+        - docker rm -f nfteyes_client &> /dev/null || true
+    after_script:
+        - docker run --restart always -d -p 3002:3002 --name nfteyes_client --log-opt max-size=20m --log-opt max-file=5 nfteyes_client
+    rules:
+        - if: '$CI_COMMIT_BRANCH == "main"'
+          exists:
+              - dockerfile-staging
+    tags:
+        - staging

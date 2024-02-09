@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Abel-Regular';
+    src: url('../common/assets/fonts/Abel-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Teko-Light';
+    src: url('../common/assets/fonts/Teko-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Teko-Regular';
+    src: url('../common/assets/fonts/Teko-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Teko-Medium';
+    src: url('../common/assets/fonts/Teko-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Teko-SemiBold';
+    src: url('../common/assets/fonts/Teko-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Teko-Bold';
+    src: url('../common/assets/fonts/Teko-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Light';
+    src: url('../common/assets/fonts/NotoSansKR-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Regular';
+    src: url('../common/assets/fonts/NotoSansKR-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Medium';
+    src: url('../common/assets/fonts/NotoSansKR-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'NotoSansKR-SemiBold';
+    src: url('../common/assets/fonts/NotoSansKR-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'NotoSansKR-Bold';
+    src: url('../common/assets/fonts/NotoSansKR-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../common/assets/fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../common/assets/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../common/assets/fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../common/assets/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Signika-Light';
+    src: url('../common/assets/fonts/Signika-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Signika-Regular';
+    src: url('../common/assets/fonts/Signika-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Signika-Medium';
+    src: url('../common/assets/fonts/Signika-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Signika-Semibold';
+    src: url('../common/assets/fonts/Signika-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Signika-Bold';
+    src: url('../common/assets/fonts/Signika-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../common/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Signika-sc-regular';
+    src: url('../common/assets/fonts/Signika-sc-regular.ttf') format('truetype');
+    font-weight: 700;
+}
+
+

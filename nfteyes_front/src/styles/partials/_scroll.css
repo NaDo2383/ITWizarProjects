@@ -1,0 +1,11 @@
+.floating-scrollbar {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+}
+.floating-scrollbar::-webkit-scrollbar{
+    width: 0.5em;
+}
+.floating-scrollbar:hover::-webkit-scrollbar-thumb {
+    border-radius: 100vw;
+    background-color: #a3de8a;
+}

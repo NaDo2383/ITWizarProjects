@@ -1,0 +1,207 @@
+#notice-row-1:hover p:first-child {
+	color: #FB3873;
+}
+
+#notice-row-1:hover p:nth-child(2) {
+	color: #DDD;
+}
+
+#notice-row-2:hover p:first-child {
+	color: #FB3873;
+}
+
+#notice-row-2:hover p:nth-child(2) {
+	color: #DDD;
+}
+
+#notice-row-3:hover p:first-child {
+	color: #FB3873;
+}
+
+#notice-row-3:hover p:nth-child(2) {
+	color: #DDD;
+}
+
+#noticeCardContainer:hover {
+	box-shadow: 1px 2px 20px #6D6D6D;
+	-webkit-transition: box-shadow .4s ease-in;
+}
+
+#NoticeMainCard {
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(149, 157, 165, 0.2);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow;
+	transition-property: box-shadow;
+}
+
+#NoticeMainCard:hover,
+#NoticeMainCard:focus,
+#NoticeMainCard:active {
+	box-shadow: 1px 2px 20px #6D6D6D;
+}
+
+#noticeCardContainer:hover h1 {
+	color: #FB3873;
+	-webkit-transition: color .4s ease-in;
+}
+
+#noticeCardContainer:hover p {
+	color: #DDD;
+	-webkit-transition: color .4s ease-in;
+}
+
+#noticeCardContainer:hover span {
+	color: #DDD;
+	-webkit-transition: color .4s ease-in;
+}
+#noticeCardContainer:hover svg {
+	color: #DDD;
+	-webkit-transition: color .4s ease-in;
+}
+#noticeCardContainer:hover  #eyeIcon {
+	stroke: #DDD;
+	-webkit-transition: stroke .4s ease-in;
+}
+#NoticeMainCard:hover  #eyeIcon {
+	stroke: #DDD;
+	-webkit-transition: stroke .4s ease-in;
+}
+
+#NoticeMainCard:hover h1 {
+	color: #FB3873;
+	-webkit-transition: color .4s ease-in;
+}
+
+#NoticeMainCard:hover p {
+	color: #DDD;
+	-webkit-transition: color .4s ease-in;
+}
+
+#NoticeMainCard:hover .noticeDesc {
+	color: #fff;
+	-webkit-transition: color .4s ease-in;
+}
+
+#NoticeMainCard:hover span {
+	color: #DDD;
+	-webkit-transition: color .4s ease-in;
+}
+
+.HeaderTab {
+	overflow-x: hidden;
+}
+
+.HeaderTab:after {
+	display: block;
+	content: '';
+	padding-top: 20px;
+	bottom: 0;
+	border-bottom: solid 2px #FB3873;
+	transform: scaleX(0);
+	transition: transform 300ms ease-in-out;
+}
+
+.HeaderTab:hover:after {
+	transform: scaleX(2);
+	padding-top: 20px;
+	bottom: 0;
+}
+
+.tabBorder:hover {
+	border: 1.5px solid #FB3873;
+	-webkit-transition: color .250ms ease-in;
+}
+
+#language:hover h4 {
+	color: #fff;
+}
+
+.mainCard:hover {
+	box-shadow: 0 0 20px rgba(149, 157, 165, 0.2);
+}
+
+/* Float Shadow */
+.mainCard {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px #fff;
+	position: relative;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+}
+
+.mainCard:before {
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	top: 100%;
+	left: 5%;
+	height: 20px;
+	width: 90%;
+	opacity: 0;
+	margin-top: 5px;
+	background: -webkit-radial-gradient(center, ellipse, rgba(221, 221, 221, 0.35) 0%, rgba(221, 221, 221, 0) 80%);
+	background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+	/* W3C */
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform, opacity;
+	transition-property: transform, opacity;
+}
+
+.mainCard:hover,
+.mainCard:focus,
+.mainCard:active {
+	-webkit-transform: translateY(-10px);
+	transform: translateY(-10px);
+	/* move the element up by 5px */
+}
+
+.mainCard:hover:before,
+.mainCard:focus:before,
+.mainCard:active:before {
+	opacity: 1;
+	-webkit-transform: translateY(10px);
+	transform: translateY(0px);
+}
+
+.artistCard {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(149, 157, 165, 0.2);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow;
+	transition-property: box-shadow;
+}
+
+.artistCard:hover,
+.artistCard:focus,
+.artistCard:active {
+	box-shadow: 1px 2px 20px #6D6D6D;
+}
+
+.animationBtn:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	transition-timing-function: ease-in;
+	transition: 0.3s;
+}
+
+.animationBtn:focus {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	transition-timing-function: ease-out;
+	transition: 0.3s;
+}

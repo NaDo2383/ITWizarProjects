@@ -1,0 +1,33 @@
+table {
+    @apply w-full text-center whitespace-nowrap;
+
+    & thead {
+        @apply bg-pinkTableHead;
+    }
+    & thead tr {
+        @apply px-30;
+    }
+    & thead tr td {
+        @apply w-[95px] py-18 text-gray-40 text-22 leading-24;
+        text-wrap: wrap;
+    }
+    & tbody {
+        @apply text-gray-50 text-20 leading-[32px];
+    }
+    & tbody tr {
+       @apply border-b border-gray-70;
+    }
+    & tbody tr:hover {
+        @apply bg-blackRowHover;
+   }
+    & tbody tr td {
+        @apply pt-[22px] pb-[23px];
+    }
+    & tbody tr td img {
+        @apply block m-auto;
+    }
+}
+
+.table-wrapper {
+    @apply w-full overflow-hidden dark:border-gray-700 rounded-lg mb-8;
+}

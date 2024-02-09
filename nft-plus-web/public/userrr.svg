@@ -1,0 +1,16 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 13" width="14" height="13">
+	<title>contents</title>
+	<defs>
+		<image  width="14" height="13" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAMAAACuAq9NAAAAAXNSR0IB2cksfwAAAEJQTFRFAAAAaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoaGhoGXf0oAAAABZ0Uk5TABes+cj/JiO7DZXjRrDk8I1e0v23uPM7m2MAAABPSURBVHicbctJEoAgEEPRMM/IoPe/qqBC9cK/e5UKMGJcCM6wkmokl7R60h/NS7NmO2X31/kQvMNvMeVjlFOcKmpXgKpIFY2yoVN2nJTXDeoHA0ClxpRFAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="contents">
+		<g id="4.작가정보">
+			<g id="icon">
+				<use id="레이어 338" href="#img1" x="0" y="0" />
+			</g>
+		</g>
+	</g>
+</svg>

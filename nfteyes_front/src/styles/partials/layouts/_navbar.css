@@ -1,0 +1,16 @@
+nav {
+    @apply hidden md:flex;
+    ul {
+        @apply flex items-center gap-78 text-white;
+    }
+    ul li {
+       
+    }
+
+    ul li a {
+        @apply text-white hover:text-pink font-tekoRegular text-30;
+    }
+    ul li:last-child a { 
+        @apply text-mauve hover:text-pink;
+    }
+}

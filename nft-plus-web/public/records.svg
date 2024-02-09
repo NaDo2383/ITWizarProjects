@@ -1,0 +1,16 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 14" width="15" height="14">
+	<title>contents</title>
+	<defs>
+		<image  width="15" height="14" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOAQMAAADKRNSsAAAAAXNSR0IB2cksfwAAAAZQTFRF////bW1t9p2DAgAAAAJ0Uk5TAP9bkSK1AAAAGElEQVR4nGNg4GOAI+Y+KHrAB0KP+5ARAIueCv1jA+AtAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="contents">
+		<g id="3.이용 허락 거래 기록">
+			<g id="icon">
+				<use id="레이어 333 사본" href="#img1" x="0" y="0" />
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,56 @@
+{
+    "lriif_id": "{lriif_id}",
+    "sample_list": [
+        [
+            "Sales",
+            "int",
+            [
+                {
+                    "KeyInt": 10
+                },
+                {
+                    "KeyInt": 100
+                },
+                {
+                    "KeyInt": 200
+                },
+                {
+                    "KeyInt": 1000
+                }
+            ]
+        ],
+        [
+            "playCount",
+            "int",
+            [
+                {
+                    "KeyInt": 100
+                },
+                {
+                    "KeyInt": 10000
+                },
+                {
+                    "KeyInt": 1000000
+                }
+            ]
+        ],
+        [
+            "mediaType",
+            "str",
+            [
+                {
+                    "KeyString": "YouTube"
+                },
+                {
+                    "KeyString": "블로그"
+                },
+                {
+                    "KeyString": "SNS"
+                },
+                {
+                    "KeyString": "웹사이트"
+                }
+            ]
+        ]
+    ]
+}

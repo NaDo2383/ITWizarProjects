@@ -1,0 +1,56 @@
+.popup-text {
+    @apply font-700 text-22 leading-45 tracking-widest;
+}
+
+.heading {
+    @apply relative text-center;
+    width: var(--heading-width);
+}
+.heading-container {
+    @apply relative w-full flex justify-center;
+}
+
+.heading-container::before,.heading-container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 0px;
+    @apply border border-gray-400;
+}
+.heading-container::before  {
+    left: 0;
+    width: calc(50% - var(--heading-width)/2);
+}
+.heading-container::after {
+    right: 0;
+    width: calc(50% - var(--heading-width)/2);
+}
+
+.statisticTitleGradiant {
+    background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.32) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.statsOfNFTEyesCardGradiant{
+    background: linear-gradient(180deg, #BD98D4 0%, rgba(132, 18, 202, 0.63) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.block_count_gradiant{
+    -webkit-text-stroke-color: #000 !important;
+    background: linear-gradient(180deg, #FFF 42.5%, #7E7E7E 82%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.analysis_count_gradiant{
+    background: linear-gradient(180deg, #E4E4E4 0%, rgba(228, 228, 228, 0.63) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

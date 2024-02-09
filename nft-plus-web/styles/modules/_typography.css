@@ -1,0 +1,31 @@
+h2 {
+    color: #FFF;
+    font-size: 16px;
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+p {
+    color: #DDD;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h6 {
+    font-size: 14px;
+}
+h3 {
+    font-size: 24px;     
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}

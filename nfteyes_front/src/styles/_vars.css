@@ -1,0 +1,75 @@
+:root {
+    /* clamp vars =>  min: 480px - max:1280px */
+    /* font-sizes */
+    --font-2: clamp(0.0625rem, 0.0341rem + 0.0947vw, 0.125rem); /* 1- 2 */
+    --font-4: clamp(0.125rem, 0.0682rem + 0.1894vw, 0.25rem); /* 2 - 4 */
+    --font-6: clamp(0.1875rem, 0.1023rem + 0.2841vw, 0.375rem); /* 3 - 6 */
+    --font-8: clamp(0.25rem, 0.1364rem + 0.3788vw, 0.5rem); /* 4 - 8 */
+    --font-10: clamp(0.375rem, 0.2614rem + 0.3788vw, 0.625rem); /* 6 - 10 */
+    --font-12: clamp(0.5rem, 0.3864rem + 0.3788vw, 0.75rem); /* 8 - 12 */
+    --font-14: clamp(0.625rem, 0.5114rem + 0.3788vw, 0.875rem); /* 10 - 14 */
+    --font-15: clamp(0.4375rem, 0.1375rem + 1vw, 0.9375rem); /* 7 - 15 */
+    --font-16: clamp(0.75rem, 0.6364rem + 0.3788vw, 1rem); /* 12 - 16 */
+    --font-18: clamp(0.875rem, 0.7614rem + 0.3788vw, 1.125rem); /* 14 - 18 */
+    --font-20: clamp(1rem, 0.8864rem + 0.3788vw, 1.25rem); /* 16 - 20 */
+    --font-22: clamp(1.125rem, 1.0114rem + 0.3788vw, 1.375rem); /* 18 - 22 */
+    --font-24: clamp(1.25rem, 1.1364rem + 0.3788vw, 1.5rem); /* 20 - 24 */
+    --font-25: clamp(1.3125rem, 1.1625rem + 0.5vw, 1.5625rem);; /* 21 - 25 */
+    --font-26: clamp(1.375rem, 1.2614rem + 0.3788vw, 1.625rem); /* 22 - 26 */
+    --font-30: clamp(1.625rem, 1.5114rem + 0.3788vw, 1.875rem); /* 26 - 30 */
+    --font-34: clamp(1.875rem, 1.7614rem + 0.3788vw, 2.125rem); /* 30 - 34 */
+    --font-35: clamp(1.9375rem, 1.7875rem + 0.5vw, 2.1875rem); /* 31 - 35 */
+    --font-38: clamp(2.125rem, 2.0114rem + 0.3788vw, 2.375rem); /* 34 - 38 */
+    --font-40: clamp(2.25rem, 2.1rem + 0.5vw, 2.5rem); /* 36 - 40*/
+    --font-50: clamp(2.75rem, 2.525rem + 0.75vw, 3.125rem); /* 44 - 50*/
+    --font-60: clamp(2.5rem, 1.75rem + 2.5vw, 3.75rem); /* 40 - 60*/
+    --font-80: clamp(4.375rem, 4rem + 1.25vw, 5rem); /* 70 - 80*/
+    --font-100: clamp(3.125rem, 1.25rem + 6.25vw, 6.25rem); /* 90 - 100*/
+    
+    /* spacing */
+    --space-2: clamp(0.0625rem, 0.025rem + 0.125vw, 0.125rem); /* 1 -2 */
+    --space-3: clamp(0.09375rem, 0.0375rem + 0.1875vw, 0.1875rem); /* 1.5 -3 */
+    --space-4: clamp(0.125rem, 0.05rem + 0.25vw, 0.25rem); /* 2 - 4 */
+    --space-5: clamp(0.15625rem, 0.0625rem + 0.3125vw, 0.3125rem); /* 2.5 -5 */
+    --space-6: clamp(0.1875rem, 0.075rem + 0.375vw, 0.375rem); /* 3 -6 */
+    --space-7: clamp(0.21875rem, 0.0875rem + 0.4375vw, 0.4375rem); /* 3.5 -7 */
+    --space-8: clamp(0.25rem, 0.1rem + 0.5vw, 0.5rem); /* 4 -8 */
+    --space-9: clamp(0.28125rem, 0.1125rem + 0.5625vw, 0.5625rem); /* 4.5 - 9 */
+    --space-10: clamp(0.3125rem, 0.125rem + 0.625vw, 0.625rem); /* 5 - 10 */
+    --space-12: clamp(0.375rem, 0.15rem + 0.75vw, 0.75rem); /* 6 - 12 */
+    --space-14: clamp(0.4375rem, 0.175rem + 0.875vw, 0.875rem); /* 7 - 14 */
+    --space-15: clamp(0.5rem, 0.2375rem + 0.875vw, 0.9375rem);; /* 8 - 15 */
+    --space-16: clamp(0.5rem, 0.2rem + 1vw, 1rem); /* 8 - 16 */
+    --space-16: clamp(0.5rem, 0.2rem + 1vw, 1rem); /* 8 - 16 */
+    --space-18: clamp(0.5625rem, 0.225rem + 1.125vw, 1.125rem); /* 9 - 18 */
+    --space-20: clamp(0.625rem, 0.25rem + 1.25vw, 1.25rem); /* 10 - 20 */
+    --space-22: clamp(0.6875rem, 0.275rem + 1.375vw, 1.375rem); /* 11 - 22 */
+    --space-24: clamp(0.75rem, 0.3rem + 1.5vw, 1.5rem); /* 12 - 24 */
+    --space-30: clamp(0.9375rem, 0.375rem + 1.875vw, 1.875rem); /* 15 - 30 */
+    --space-36: clamp(1.125rem, 0.45rem + 2.25vw, 2.25rem); /* 18 - 36 */
+    --space-40: clamp(1.25rem, 0.5rem + 2.5vw, 2.5rem); /* 20 - 40 */
+    --space-50: clamp(1.875rem, 1.125rem + 2.5vw, 3.125rem); /* 30 - 50 */
+    --space-60: clamp(1.875rem, 0.75rem + 3.75vw, 3.75rem); /* 30 - 60 */
+    --space-68: clamp(2.125rem, 0.85rem + 4.25vw, 4.25rem); /* 34 - 68 */
+    --space-78: clamp(2.4375rem, 0.975rem + 4.875vw, 4.875rem); /* 39 - 78 */
+    --space-80: clamp(2.5rem, 1rem + 5vw, 5rem); /* 40 - 80 */
+    --space-85: clamp(2.65625rem, 1.0625rem + 5.3125vw, 5.3125rem); /* 42.5 - 85 */
+    --space-137: clamp(4.25rem, 1.6625rem + 8.625vw, 8.5625rem); /* 68 - 137 */
+    --space-220: clamp(6.875rem, 2.75rem + 13.75vw, 13.75rem); /* 110 - 220 */
+    --space-283: clamp(8.84375rem, 3.5375rem + 17.6875vw, 17.6875rem); /* 141.5 - 283 */
+
+    /* colors */
+    --green: #10b981;
+    --gray: #e5e7eb;
+    --gray-soft: rgb(229, 231, 235, .9);
+    --transform-time: 0.3;
+    /* heading */
+   --heading-width: 200px;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    }
+}

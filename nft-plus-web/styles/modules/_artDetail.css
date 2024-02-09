@@ -1,0 +1,113 @@
+.detailBtn {
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.detailBtn .truncate {
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.detail li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 0.5px solid #C5C8D2; */
+  border-radius: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  gap: 0.25rem;
+}
+
+.detail li:hover {
+  border: 0.5px solid #FE25D5;
+}
+
+.license li p {
+  width: 100%;
+  cursor: pointer;
+  /* border: 0.5px solid #C5C8D2; */
+  /*ene hesgiig @media garaar bichihguin tuld tailwind class aar ogson*/
+  font-weight: 400;
+  color: #DDDDDD;
+  font-size: 15px;
+  padding: 0.15rem 0.75rem;
+  background-color: #111111;
+  border-radius: 50px;
+}
+
+/* .license li p:hover{
+    border: 1px solid #FE25D5;
+} */
+.userBtn {
+  @apply lg:w-[48px] lg:h-[48px] w-[41px] h-[41px];
+  border-radius: 50px;
+  background-color: #333;
+  border: 1px solid #999;
+  overflow: hidden;
+}
+
+.licenseTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #DDDDDD;
+  @apply lg:text-[16px] sm:text-[16px] text-[12px]
+}
+
+.licenseTable-container {
+  display: flex;
+  top: 0;
+  width: 100%;
+  background-color: #2F2E39;
+  @apply lg:h-[42px] sm:h-[34px] h-[27px];
+  border: 1px solid #2F2E39;
+}
+
+.ThumbNailContainer:hover .VIDEO {
+  display: none;
+}
+
+.ThumbNailContainer .VIDEOPLAYER {
+  display: none;
+}
+
+.ThumbNailContainer .AUDIO {
+  display: none;
+}
+
+.ThumbNailContainer:hover .VIDEOPLAYER {
+  display: block;
+}
+
+.ThumbNailContainer:hover .AUDIO {
+  display: block;
+}
+
+.ThumbNailContainer:hover .AUDIO {
+  display: block;
+}
+
+.reactPlayer video {
+  /* width: 100%;
+  height: 100%; */
+  object-fit: contain;
+}
+
+.nodata {
+  @apply sm:w-[371px] sm:h-[371px] w-[223px] h-[223px] lg:w-96 lg:h-96 relative rounded-full left-1/2 transform -translate-x-1/2 bg-[#505050] before:w-1/2 before:h-1/2 before:absolute before:bg-[#252525] before:transform before:translate-x-1/2 before:translate-y-1/2 before:rounded-full 2xl:absolute top-0
+}
+
+.nodata-title {
+  @apply absolute top-1/2 left-1/2 transform z-40 -translate-x-1/2 -translate-y-1/2 text-[#DDD] font-[400] lg:text-[16px] sm:text-[14px] text-[9px]
+}

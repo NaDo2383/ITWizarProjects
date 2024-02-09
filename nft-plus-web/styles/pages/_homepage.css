@@ -1,0 +1,177 @@
+.mainpage {
+	@apply w-full text-center mt-16 md:mt-24 px-8;
+}
+
+.banner {
+	@apply container mx-auto flex items-center justify-evenly text-white relative;
+}
+
+.banner-loading {
+	@apply w-full h-full bg-nogoon animate-pulse bg-opacity-60;
+}
+
+.banner-img {
+	@apply w-full h-full flex flex-col items-center relative justify-center;
+}
+
+.banner-bottom {
+	@apply w-full bg-[#161717] lg:pt-[423px] lg:pb-[320px] md:pt-[324px] md:pb-[180px] pt-[180px] pb-[160px] items-center justify-evenly text-white overflow-x-hidden;
+}
+
+.banner-top {
+	@apply w-full md:min-h-screen max-h-screen md:h-screen h-1/2 lg:pt-[324px] lg:pb-[523px] md:pt-[324px] md:pb-[180px] pb-[160px] md:items-center md:justify-evenly text-white relative bg-auto bg-no-repeat bg-center bg-[#161717];
+}
+
+.artwork-title {
+	@apply cursor-pointer text-[#fff] lg:text-[22px] sm:text-[20px] text-[14px] font-[500];
+}
+
+.title {
+	@apply lg:text-[40px] sm:text-[32px] text-[20px] text-[#E0E6E8] font-semibold;
+}
+
+.recommendedCard {
+	@apply rounded-2xl relative overflow-hidden lg:h-auto shadow-xl cursor-pointer;
+}
+
+.recommended-title {
+	@apply w-full h-full absolute top-0 left-0 bg-gradient-to-b from-transWhite to-transBlack text-left flex items-end px-[8%] py-[6%] text-white z-30;
+}
+
+.recommend-title {
+	@apply relative mx-auto w-full flex items-center justify-center;
+}
+
+.recommended-loading {
+	@apply w-full lg:h-[25rem] relative xl:h-[38rem] grid grid-cols-2 sm:grid-cols-2 gap-5 sm:gap-5 lg:grid-cols-5 lg:grid-rows-2;
+}
+
+.recommended-empty {
+	@apply absolute shadow-xl rounded-xl bg-gray-100 flex-col w-full h-full top-0 left-0 flex items-center justify-center;
+}
+
+.recommend-cardL {
+	@apply w-full lg:h-[25rem] xl:h-[38rem] grid grid-cols-2 sm:grid-cols-2 gap-5 sm:gap-5 lg:grid-cols-5 lg:grid-rows-2;
+}
+
+.creator-container {
+	@apply w-full relative text-center md:h-screen;
+}
+
+.creator {
+	@apply w-full h-full flex flex-col;
+}
+
+.creator-avatar {
+	@apply absolute z-30 left-1/2 -translate-x-1/2 top-0 -translate-y-1/2 w-20 h-20 rounded-full border-[3px] border-white bg-white overflow-hidden;
+}
+
+.creator-empty {
+	@apply absolute shadow-xl rounded-xl bg-gray-100 flex-col w-full h-full top-0 left-0 flex items-center justify-center;
+}
+
+.recent-work {
+	@apply sm:w-full min-w-[158px] max-w-md transition duration-300 cursor-pointer hover:shadow-xl flex flex-col;
+}
+
+.recent-work .recent-container {
+	@apply w-full text-center mt-16 md:mt-24 px-8;
+}
+
+.recent-work .motion {
+	@apply px-4 py-3 text-[#333] font-[500] font-noto text-[15px] bg-white bg-opacity-80 right-0 rounded-xl;
+}
+
+.recent-work .motion-text {
+	@apply absolute border-y-[5px] border-x-8 border-white border-t-transparent border-l-transparent bottom-full right-4 border-opacity-80;
+}
+
+.icon {
+	@apply lg:w-[17px] lg:h-[16px] md:w-[17px] md:h-[16px] w-[9px] h-[9px] lg:mb-2 sm:mb-2 mb-0 overflow-hidden relative ml-2 flex justify-center items-center mt-0 sm:mt-[10px] xs:mt-[3px];
+}
+
+.recent-work .market {
+	@apply justify-between text-[#DDDDDD] text-sm font-[700] text-[14px] flex items-center gap-1;
+}
+
+.recent-work .whiteCircle {
+	@apply transition duration-300 group-hover:bg-[#666];
+}
+
+.recent-work .error {
+	@apply absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col;
+}
+
+.recent-work .recentLoader {
+	@apply absolute top-0 left-0 w-full h-full flex items-center justify-center flex-col;
+}
+
+.service {
+	@apply w-full mb-24 font-noto grid gap-10 lg:grid-cols-4 text-xs sm:text-sm md:text-base md:grid-cols-2 grid-cols-2;
+}
+
+.service-container {
+	@apply w-full text-center mt-16 md:mt-24 px-8;
+}
+
+.service-title {
+	@apply text-base truncate font-bold mt-5 mb-3 text-[22px] md:my-8 text-[#E0E6E8];
+}
+
+.service-img {
+	@apply relative justify-center flex items-center;
+}
+
+.slider-prev {
+	@apply absolute z-30 top-1/2 w-16 h-16 rounded-full bg-gray-100 text-gray-500 flex justify-center items-center -translate-y-1/2 left-0 text-xl -translate-x-1/2;
+}
+
+.slider-next {
+	@apply justify-center items-center w-[112px] h-[112px] rounded-full absolute hidden md:flex z-30 bg-[rgb(0,0,0,50%)] right-[-55px] top-[1/2];
+}
+
+.slider-next:hover {
+	transform: scale(1.1);
+	transition-timing-function: ease-in;
+	transition: 0.3s;
+}
+
+.slider-next:focus {
+	transform: scale(0.9);
+	transition-timing-function: ease-out;
+	transition: 0.3s;
+}
+
+.vmNextSlider {
+	@apply justify-center items-center w-[112px] h-[112px] rounded-full absolute hidden md:flex z-30 bg-[rgb(0,0,0,50%)] lg:right-[-55px] top-[42%]
+}
+
+.vmNextSlider:hover {
+	transform: scale(1.1);
+	transition-timing-function: ease-in;
+	transition: 0.3s;
+}
+
+.vmNextSlider:focus {
+	transform: scale(0.9);
+	transition-timing-function: ease-out;
+	transition: 0.3s;
+}
+
+.vmPrevSlider {
+	@apply absolute hidden md:flex z-30 top-[42%] w-[112px] h-[112px] rounded-full bg-[rgb(0,0,0,50%)] text-[#fff] text-[20px] justify-center items-center left-[-55px]
+}
+.vmPrevSlider:hover {
+	transform: scale(1.1);
+	transition-timing-function: ease-in;
+	transition: 0.3s;
+}
+.vmPrevSlider:focus {
+	transform: scale(0.9);
+	transition-timing-function: ease-out;
+	transition: 0.3s;
+}
+
+.tamtamValueHeader {
+	@apply text-white lg:text-[28px] sm:text-[22px] text-[15px] font-[600];
+}

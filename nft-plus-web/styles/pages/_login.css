@@ -1,0 +1,9 @@
+.login-form {
+    @apply min-w-[320px] sm:min-w-[375px] md:min-w-[411px] transition duration-300 font-noto flex flex-col;
+}
+.login-form > * {
+    @apply mb-4;
+}
+.login-form input {
+    @apply px-4 py-5 rounded-lg w-full transition duration-300 font-[100] focus:outline-none focus:ring-[#ff00e4] focus:ring-1;
+}

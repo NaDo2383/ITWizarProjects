@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-abelRegular bg-[#000];
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        @apply text-white font-tekoLight font-300 leading-normal;
+    }
+
+    h1,
+    h2, 
+    h3,
+    h4,
+    h5,
+    p,
+    a,
+    i,
+    b,
+    label,
+    button
+    {
+        @apply dark:text-white;
+    }
+
+    h1 {
+        @apply text-60;
+    } 
+
+    h2 {
+        @apply text-40;
+    }
+
+    h3 {
+        @apply text-35;
+    }
+
+    h4 {
+        @apply text-24;
+    }
+
+    h5 {
+        @apply text-20;
+    }
+  
+    p,
+    label,
+    span,
+    a {
+        @apply text-gray-50 text-16 leading-24;
+    }
+    p {
+        @apply leading-26 font-abelRegular;
+    }
+
+    header,
+    footer,
+    aside,
+    nav,
+    main {
+        @apply dark:bg-gray-900;
+    }
+ 
+    
+    /**common border***/
+    textarea,
+    select, .checkbox {
+        @apply border border-opacity-10;
+    }
+    /** common form elements  **/
+    input,
+    textarea,
+    select {
+        @apply 
+        text-20 
+        text-gray-50 
+        inline-flex 
+        leading-30 
+        px-16 
+        py-9 
+        outline-none
+        placeholder-gray-800
+        border
+        border-transparent 
+        rounded-md 
+        bg-black
+        focus:outline-none
+        focus:border-gray-100 
+        placeholder:text-gray-600 
+        dark:focus:bg-gray-700 
+        dark:text-gray-300;
+    }
+   
+    /** common placeholder **/
+    select option {
+        @apply text-gray-600;
+    }
+    .fileUploader {
+	position: relative;
+	width: 100%;
+	min-height: 276px;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	background-color: #2b2b2b;
+	overflow: hidden;
+	flex: 1;
+	border-radius: 12px;
+}
+
+}

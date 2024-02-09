@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 51" width="52" height="51">
+	<title>slider</title>
+	<defs>
+		<image  width="52" height="51" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAzCAMAAADvo9thAAAAAXNSR0IB2cksfwAAAWJQTFRFMzMzMzMzMzMzMzMz8vLy////kpKSmZmZhh57jB2ANjI2cCRoRC9CWilVXSlXRC9B8gPZ/wDkOjE5vxCskxuGWSpU8QPY8QTY3gjIOTE5rhSeWCpTfSB0jh2CTS1J3QjHqBaY4AjJdyJu/AHhQTA/SS1GbiRm4QfKpRaWSC5F8ATX/gDjciNqNDM00gu9oheTpReW0Qu8dCNr7wTWRy5E9QPbgCB2Qy9ByA60/QDjNTM0phaXxw6zQi9AgSB24QjKWSlUNzI2bSRmix1/eyFxQDA+Y2NjODg4XyhZiR59hB95TSxKS0tLSkpKiB59OTk5YmJibSVlaWlp9PT0wMDAOzs7TU1N39/fwcHBu7u7VVVVQUFBo6Oj/Pz8fX19iYmJ8PDwiIiINjY2Ojo6bW1toqKiVlZW2dnZrKyspaWlyMjI+/v7ZWVlgoKCnZ2doKCgvb298/PzvLy8+vr6x8fHsrKyUAvtrQAAAHZ0Uk5Tk/3//v///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7tv/fEAAAF4SURBVHic7ZbpU0FRGIevH9dSKe37qkVJu4pWIaKVEFJaUZZU/v/Ovc5pkWm6pjF98PtwzvM689wP73nPDI6TQWJknHQHkHPSHUCQFLyEKKouKVUSoqRSRY2oSFJraOqAesYNgJZxI9DEWE0lXTNNC9DKWAtoGLcB7Yx1VOqQInVSqYv90A30MO4F+hj3AwOMB6k0ROthwiOU9aPAmJ4W4+RggrKBSpNTYmmcJmyaKZ7NCl2aK/K8ifCCUeTFJdZyrfAZ87LYzpVVwhaDVWDrmoUU6xviwaaZ8Nb2xz3ZduwOJ9l3XWRx73m8ZNs/IIvXc+gm29ExWZwO+4nt++X6/KcBxsFQKMg4cOb3lV5uOCJi9DzG8xdRkV2XcZ6PX12Lxc0tz8fuigf3YbApTyRVqYdHYYjTQCabe8oXRzr/nMtmgLTAL68pVTJR9mkQqfD1LRSo9MN7qkk1qSa9S58TKSeVprrSP+9eTfqr2ftVOLl0p5J/iTLuDbdMgB3JMnwCAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="slider">
+		<g id="mu">
+			<use id="레이어 214" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

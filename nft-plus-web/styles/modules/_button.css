@@ -1,0 +1,16 @@
+.btn {
+    @apply w-full py-4 bg-black font-bold text-white
+}
+
+.outlined-btn {
+    @apply text-black font-[400] text-[16px] sm:text-sm bg-transparent border border-black rounded-md;
+}
+.sort-btn {
+    @apply w-full text-[#ABABAB] flex justify-between px-[10px] pt-[4px] pb-[2px] bg-transparent border focus:outline-none min-w-[150px] border-[#656565] rounded-[8px] font-[400] text-[16px] gap-2
+}
+.edit-btn-container {
+    @apply w-full flex gap-2 lg:py-[100px] py-[50px] items-center justify-center
+}
+.edit-btn {
+    @apply rounded-lg w-[150px] py-4 px-8 font-[300] border
+}
